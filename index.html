@@ -26,7 +26,7 @@
 
         .container h2 {
             animation: floatIn 1s ease-out;
-            color: white; /* 设置白色字体 */
+            color: white;
         }
 
         /* 打字机动画 */
@@ -45,15 +45,26 @@
             display: inline-block;
             overflow: hidden;
             white-space: nowrap;
-            color: white; /* 设置白色字体 */
+            color: white;
             animation: typing 10s steps(60) 1s 1 normal both;
         }
+
+        /* 自定义导航栏图片 */
+        nav .navbar-brand img {
+            max-width: 200px; /* 适当缩放图片的大小 */
+            height: auto; /* 自适应高度 */
+            display: block;
+            margin: 0 auto; /* 让图片居中 */
+        }
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">主页</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="/mnt/data/chien-studio.PNG" alt="Chien Studio Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
